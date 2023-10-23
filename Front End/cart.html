@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - UA WARDROBE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- Cart items details -->
+    <div class="small-container cart-page">
+        <table width="100%">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr class="cart-item">
+                <td>
+                    <div class="cart-info" >
+                        <img src="images/buy-1.jpg" data-product-id="1">
+                        <div>
+                            <p>Red T-shirt</p>
+                            <small><p>Price: $<span class="product-price">20.00</span></p></small>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="quantity">
+                        <input type="number" class="product-quantity" value="1" min="1">
+                    </div>
+                </td>
+                <td class="product-subtotal">20.00</td>
+            </tr>
+            <tr class="cart-item">
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg" data-product-id="2">
+                        <div>
+                            <p>Blue Jeans</p>
+                            <small><p>Price: $<span class="product-price">40.00</span></p></small>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="quantity">
+                        <input type="number" class="product-quantity" value="1" min="1">
+                    </div>
+                </td>
+                <td class="product-subtotal">40.00</td>
+            </tr>
+            
+            <tr class="cart-item">
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg" data-product-id="3">
+                        <div>
+                            <p>White Sneakers</p>
+                            <small><p>Price: $<span class="product-price">35.00</span></p></small>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="quantity">
+                        <input type="number" class="product-quantity" value="1" min="1">
+                    </div>
+                </td>
+                <td class="product-subtotal">35.00</td>
+            </tr>
+            
+            
+            <!-- ... (previous product rows) ... -->
+            <tr>
+                <td>Total Price:</td>
+                <td></td>
+                <td id="total-price">0.00</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download the app for Android and iOS mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Easy Tutorial</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
